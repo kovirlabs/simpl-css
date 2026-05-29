@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lite.css Example</title>
+    <link rel="stylesheet" href="lite.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lite.css</h1>
+        <p>A lightweight, no-build CSS library for static sites and Astro.js.</p>
+
+        <h2>Typography</h2>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+
+        <p>This is a paragraph. It demonstrates the default text styling. You can also include <a href="#">links</a> within the text.</p>
+
+        <blockquote>
+            This is a blockquote. It's useful for calling out specific information or quotes.
+        </blockquote>
+
+        <p>Inline <code>code</code> looks like this.</p>
+
+        <pre><code>// This is a code block
+function greet(name) {
+  console.log(`Hello, ${name}!`);
+}</code></pre>
+
+        <hr>
+
+        <h2>Lists</h2>
+        <h3>Unordered List</h3>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2
+                <ul>
+                    <li>Subitem A</li>
+                    <li>Subitem B</li>
+                </ul>
+            </li>
+            <li>Item 3</li>
+        </ul>
+
+        <h3>Ordered List</h3>
+        <ol>
+            <li>First step</li>
+            <li>Second step</li>
+            <li>Third step</li>
+        </ol>
+
+        <hr>
+
+        <h2>Buttons</h2>
+        <p>
+            <button>Primary Button</button>
+            <a href="#" class="button">Link Button</a>
+            <button disabled>Disabled Button</button>
+        </p>
+
+        <hr>
+
+        <h2>Forms</h2>
+        <form onsubmit="event.preventDefault();">
+            <div style="margin-bottom: 1rem;">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+            </div>
+
+            <div style="margin-bottom: 1rem;">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com">
+            </div>
+
+            <div style="margin-bottom: 1rem;">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Your message..."></textarea>
+            </div>
+
+            <div style="margin-bottom: 1rem;">
+                <label for="options">Select an option</label>
+                <select id="options" name="options">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+            </div>
+
+            <button type="submit">Submit Form</button>
+        </form>
+
+        <hr>
+
+        <h2>Tables</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jane Doe</td>
+                    <td>jane@example.com</td>
+                    <td>Admin</td>
+                </tr>
+                <tr>
+                    <td>John Smith</td>
+                    <td>john@example.com</td>
+                    <td>User</td>
+                </tr>
+                <tr>
+                    <td>Alice Johnson</td>
+                    <td>alice@example.com</td>
+                    <td>Editor</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+        <br>
+    </div>
+</body>
+</html>
