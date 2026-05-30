@@ -20,14 +20,20 @@ Variables follow a semantic naming convention:
 ### 2. Base Styles
 Standard HTML elements are styled using the defined CSS variables. This includes:
 - Global box-sizing and basic resets
+- Responsive media defaults (`img`, `video`, etc.)
 - Typography (headings, paragraphs, links, blockquotes, code)
 - Lists (ordered and unordered)
 - Buttons
 - Forms (inputs, textareas, selects, labels)
 - Tables
 
-### 3. Utilities
-A `.container` class is provided to constrain the maximum width of the content and center it on the page.
+### 3. Components & Utilities
+Lite.css provides a few essential, lightweight components and layout utilities:
+- **Container**: A `.container` class to constrain max-width and center content.
+- **Responsive Grid**: A `.grid` class that provides an auto-fitting CSS grid layout without requiring media queries.
+- **Cards**: A `.card` component for grouping content with a border and subtle shadow.
+- **Alerts**: An `.alert` component for notifications, with modifiers (`.alert-success`, `.alert-warning`, `.alert-error`).
+- **Badges**: A `.badge` component for small tags or status indicators, with modifiers (`.badge-primary`, `.badge-success`, `.badge-error`).
 
 ## Usage in Astro.js
 
