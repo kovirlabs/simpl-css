@@ -34,35 +34,54 @@ import '../styles/lite.css';
 
 ## Customization
 
-You can customize the theme by overriding the CSS variables defined in `:root`.
+You can customize the theme by overriding the CSS variables defined in `:root`. Lite.css uses a 5-color base palette system alongside light/dark background and text colors to make comprehensive theming easy.
 
 In an Astro.js project, you can do this within a `<style is:global>` block in your layout, or in a standard HTML project by adding a `<style>` block or loading a separate CSS file after `lite.css`.
 
 **Example:**
 
 ```css
-/* Customizing the theme */
+/* Customizing the 5-color theme and base properties */
 :root {
-  --color-primary: #10b981; /* Change to emerald green */
-  --color-background: #fafafa;
+  /* Define your base 5 colors */
+  --theme-color-1: #10b981; /* Primary / Emerald */
+  --theme-color-2: #3b82f6; /* Success / Blue */
+  --theme-color-3: #f59e0b; /* Warning / Yellow */
+  --theme-color-4: #ef4444; /* Error / Red */
+  --theme-color-5: #6366f1; /* Info / Indigo */
+
+  /* Define base backgrounds and text */
+  --theme-bg-light: #fafafa;
+  --theme-bg-dark: #e5e5e5;
+  --theme-text-dark: #111827;
+  --theme-text-light: #4b5563;
+
+  /* Typography & Structure */
   --font-family-base: 'Inter', sans-serif;
   --border-radius: 0.5rem;
 }
 ```
 
-## Available Elements
+## Available Elements & Components
 
-Lite.css automatically styles standard HTML elements, including:
+Lite.css automatically styles standard HTML elements and provides minimal, modern class-based components:
 
-*   **Typography:** `h1` to `h6`, `p`, `a`, `blockquote`, `code`, `pre`
+*   **Typography:** `h1` to `h6`, `p`, `a`, `blockquote`, `code`, `pre`, `kbd`
 *   **Lists:** `ul`, `ol`
-*   **Buttons:** `button`, `.button` (with support for disabled states)
+*   **Buttons:** `button`, `.button` (with disabled states)
 *   **Forms:** `fieldset`, `legend`, `label`, `input`, `textarea`, `select`
 *   **Tables:** `table`, `th`, `td`
+*   **Media:** `img`, `video` (responsive by default)
+*   **Interactive:** `<details>`, `<summary>` (accordions), `<dialog>` (modals)
+*   **Navigation:** `<nav>`, `.navbar`
 
-### Utilities
+### Utilities & Components
 
-*   **`.container`**: Constrains the maximum width of the content and centers it horizontally.
+*   **Layout:** `.container` (max-width centering), `.grid` (responsive columns)
+*   **Cards:** `.card`
+*   **Badges:** `.badge` (modifiers: `.success`, `.warning`, `.error`, `.info`)
+*   **Alerts:** `.alert` (modifiers: `.success`, `.warning`, `.error`, `.info`)
+*   **Avatars:** `.avatar`
 
 ## License
 

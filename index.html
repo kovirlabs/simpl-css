@@ -8,8 +8,75 @@
 </head>
 <body>
     <div class="container">
+        <nav class="navbar">
+            <div>
+                <strong>Lite.css</strong>
+            </div>
+            <div>
+                <a href="#">Home</a>
+                <a href="#">Docs</a>
+                <a href="#">GitHub</a>
+            </div>
+        </nav>
+
         <h1>Lite.css</h1>
         <p>A lightweight, no-build CSS library for static sites and Astro.js.</p>
+
+        <hr>
+
+        <h2>Components & Elements</h2>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Card Title</h3>
+                <p>This is a simple card component. It's useful for grouping related content and displaying it neatly.</p>
+                <button>Read More</button>
+            </div>
+            <div class="card">
+                <h3>Another Card</h3>
+                <p>You can use the <code>.grid</code> class to easily create responsive layouts like this one.</p>
+                <button class="button">Action</button>
+            </div>
+        </div>
+
+        <h3>Badges</h3>
+        <p>
+            <span class="badge">Default</span>
+            <span class="badge success">Success</span>
+            <span class="badge warning">Warning</span>
+            <span class="badge error">Error</span>
+            <span class="badge info">Info</span>
+        </p>
+
+        <h3>Alerts</h3>
+        <div class="alert">This is a default alert message.</div>
+        <div class="alert success"><strong>Success!</strong> Your action was completed successfully.</div>
+        <div class="alert warning"><strong>Warning!</strong> Please check your input before proceeding.</div>
+        <div class="alert error"><strong>Error!</strong> Something went wrong.</div>
+        <div class="alert info"><strong>Heads up!</strong> This is some useful information.</div>
+
+        <h3>Interactive</h3>
+        <details>
+            <summary>Click to expand this accordion</summary>
+            <p>This uses the native HTML <code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code> elements, providing a completely JS-free accordion experience.</p>
+        </details>
+
+        <button onclick="document.getElementById('myDialog').showModal()">Open Dialog Modal</button>
+        <dialog id="myDialog">
+            <h3>Modal Dialog</h3>
+            <p>This is a native HTML <code>&lt;dialog&gt;</code> element.</p>
+            <form method="dialog">
+                <button>Close</button>
+            </form>
+        </dialog>
+
+        <h3>Avatars</h3>
+        <p>
+            <span class="avatar">AB</span>
+            <span class="avatar"><img src="https://via.placeholder.com/150" alt="Avatar"></span>
+        </p>
+
+        <hr>
 
         <h2>Typography</h2>
         <h1>Heading 1</h1>
@@ -25,7 +92,7 @@
             This is a blockquote. It's useful for calling out specific information or quotes.
         </blockquote>
 
-        <p>Inline <code>code</code> looks like this.</p>
+        <p>Inline <code>code</code> looks like this, and keyboard shortcuts look like <kbd>Ctrl</kbd> + <kbd>C</kbd>.</p>
 
         <pre><code>// This is a code block
 function greet(name) {
